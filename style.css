@@ -1,7 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;600;700&family=Playfair+Display&family=Poppins:wght@400;600;800&display=swap');
+
 :root{
     --blanche: #ffff;
     --noir: #222;
     --primaire: #253544;
     --gri: #888;
-    
+
+}
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0%;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: var(--noir);
+    background-color: var(--blanche);
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+.promo{
+    background-color: var(--primaire);
+    text-align: center;
+    color: var(--blanche);
+    padding: 0.5rem 0;
 }
