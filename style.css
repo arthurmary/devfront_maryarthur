@@ -50,7 +50,7 @@ img{
 
 .container{
     max-width: 114 rem;
-    padding: 0 auto;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 1200){
@@ -61,6 +61,8 @@ img{
 
 .navigation{
     height: 7rem;
+    padding-left: 20px;
+    padding-right: 20px;
     justify-content: space-between;
 }
 
@@ -123,4 +125,68 @@ img{
 
 .nav .icons div:last-child{
     position: relative;
+}
+
+.nav .icons div span{
+    position: absolute;
+    top: -0.5rem;
+    right: -1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blanche);
+    background-color: var(--primaire);
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px){
+    .navigation{
+        padding: 1rem 0;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: var(--blanche);
+        height: 100%;
+        max-width: 45rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: all ease-in-out;
+        z-index: 100;
+    }
+
+    .icon1{
+        display: none;
+    }
+
+    .icons{
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    .logo span{
+        color: var(--primaire);
+    }
+
+    .logo a{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .menu .top{
+        display: block;
+        position: relative;
+        background-color: var(--primaire);
+        width:  100%;
+        height: 6rem;
+        color: var(--blanche);
+
+    }
 }
