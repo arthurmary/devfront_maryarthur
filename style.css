@@ -154,8 +154,10 @@ img{
         position: fixed;
         top: 0;
         left: -100%;
+        /*left: -100%;*/
         background-color: var(--blanche);
         height: 100%;
+        width: 80%;
         max-width: 45rem;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         transition: all ease-in-out;
@@ -163,13 +165,13 @@ img{
     }
 
     .icon1{
-        display: none;
-    }
-
-    .icons{
         display: block;
         font-size: 3rem;
         cursor: pointer;
+    }
+
+    .icons{
+        display: none;
     }
     .logo span{
         color: var(--primaire);
@@ -188,5 +190,38 @@ img{
         height: 6rem;
         color: var(--blanche);
 
+    }
+
+    .top span{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .top span i{
+        font-size: 3rem;
+    }
+
+    .nav_list{
+        flex-direction: column-reverse;
+        align-items: start;
+        padding: 2rem 0;
+    }
+
+    .nav-item{
+        margin: 0 0 2rem 0;
+    }
+
+    .nav-link{
+        padding: 0.7rem;
+    } 
+
+    .menu.monter{
+        left: 0;
     }
 }
