@@ -12,6 +12,6 @@ OpenNav.addEventListener("click", () =>{
 
 FermerNav.addEventListener("click", () =>{
     if(PositionMenu <0){
-        Menu.classList.add("monter")
+        Menu.classList.remove("monter")
     }
 })
