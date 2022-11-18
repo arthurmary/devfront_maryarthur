@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>E-Commerce</title>
+</head>
+
+<body>
+<div class="promo">
+  <span>VENTE FASH  JUSQU'A 50% DE REDUCTION</span>
+</div>
+
+<header class="header">
+  <nav class="nav container">
+    <div class="navigation d-flex">
+      <div class="icon1">
+        <i class='bx bx-menu-alt-left'></i>
+      </div>
+      <div class="logo">
+      <a href="#"><span>SNEA</span>KERS</a>
+      </div>
+      <div class="menu">
+        <div class="top">
+          <span class="fermer">Fermer <i class='bx bx-x'></i></span>
+        </div>
+        <ul class="nav_list d-flex">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Boutique</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="icons d-flex">
+        <div><i class='bx bx-search'></i></div>
+        <div><i class='bx bx-user'></i></div>
+        <div><i class='bx bx-heart'></i></div>
+        <div>
+          <i class='bx bx-shopping-bag'></i>
+          <span class="align-center">0</span>
+        </div>
+      </div>
+    </div> 
+  </nav>
+  <div class="banniere">
+    <div class="banniere-contenu d-flex container">
+      <div class="gauche">
+        <span class="Sous-titre">CONTACTEZ NOUS </span>
+         <h1 class="titre">
+          Bienvenue
+          <span class="couleur">dans <br>
+            le centre d'aide</span>
+            de <br>
+            SNEAKERS
+         </h1>
+         <h5>Que pouvons nous faire pour vous?</h5>
+         <a href="#" class="btn">CONTACTEZ NOUS</a>
+      </div>
+      <div class="droit">
+        <img src="./img_produit/2fond.png" alt="">
+      </div>
+    </div>
+  </div>
+</header>
+  
+    <body>
+      
+      <Form class="bg_contact" id="form_1" action="Traitement.html" method="POST">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <p>Civilités *:
+                <input type="radio" id="masculin" name="civilite" value="masculin" required>
+                <label for="masculin">Masculin</label>
+        
+                <input type="radio" id="feminin" name="civilite" value="feminin" required>
+                <label for="feminin">Féminin</label>
+            </p>
+
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre Nom" required>
+
+            <label for="prénom">Prénom *</label>
+            <input type="text" id="prénom" name="prénom" placeholder="Votre Prénom" required>
+        
+        <br><br>
+
+            <label for="adresse">Adresse</label>
+            <input type="text" id="adresse" name="adresse" >
+            
+            <label for="ville">Ville</label>
+            <input type="text" id="ville" name="ville" >
+            
+
+        <br><br>
+
+            <label for="cp">Code postal *</label>
+             <input type="text" id="cp" name="cp" maxlength="5" size="5" required>
+       
+             <label for="Pays">Pays</label>
+            <input type="text" id="pays" name="pays">
+
+        <br><br>
+
+            <label for="tel">Tel.</label>
+            <input type="text" id="tel" name="tel" maxlength="10" size="15" required>
+
+            <label for="email">Courriel *</label>
+            <input type="email" id="email" name="email" required>
+            
+
+            <br><br>
+        </fieldset>
+        
+        <fieldset>
+            
+            <legend>Informations complémentaires</legend>
+
+            <label for="societe">Depuis quand conaissez-vous notre société?</label>
+            <input type="date" name="societe" id="societe" required>
+
+            <br><br>
+
+            <label for="activite">Quel est la nature de votre activité</label>
+            <select name="activite" id="activite">
+                <option value="communication">Communication</option>
+                <option value="commerce">Commerce</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="apiculture">Apiculture</option>
+                <option value="transport">Transport</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Message</legend>
+            <label for="message">Sujet du message*</label>
+            <input type="text" id="message" name="message" >
+            
+           
+        <br><br>
+
+            <label for="message">Message *</label>
+            <br>
+            <textarea name="message" id="message" cols="60" rows="10" required></textarea>
+
+        <br><br>
+
+            <label for="fichier">Fichier joint:</label>
+            <input type="file" name="fichier" id="fichier">
+
+        <br><br>
+
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Recevoir notre newsletter</label>
+      
+        <br>
+      
+            <input type="checkbox" name="copymessage" id="copymessage">
+            <label for="copymessage">Recevoir une copie de ce message</label>
+
+        <br><br>
+
+
+        </fieldset>
+
+        <fieldset>
+            <p>Veuillez recopier le code suivant *:</p>
+            <img src="./img_produit/captcha.png" alt="captcha" id="captcha" class="captcha">
+
+        <br><br>
+        <button type="reset">Recharger</button>
+
+        <label for="text"></label>
+  
+        <br><br>
+  
+        <input type="text" name="text" id="text">
+
+        </fieldset>
+
+        <p>* Champ requis</p>
+
+        <button type="submit" id="envoyer" name="submit">Envoyer</button>
+    <button type="reset" name="reset" id="réinitialiser">Réinitialiser</button>
+
+      </Form>
+    </body>
+</html>
