@@ -51,7 +51,7 @@ img{
 
 .container{
     max-width: 114 rem;
-    margin: 0 auto;
+    margin: 20px auto;
     
     display: flex;
 }
@@ -401,6 +401,7 @@ img{
 .small-img-group{
    display: flex; 
    justify-content: space space-between;
+   
 }
 
 .small-img-col{
@@ -409,6 +410,50 @@ img{
     cursor: pointer;
 }
 
+
+/* PANIER */
+
+#cart-container.table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cart-container table thead{
+    font-weight: 700;
+}
+#cart-container table thead td{
+    background: var(--primaire);
+    color:#222;
+    border: none;
+    padding: 6px 0;
+}
+
+#cart-container table td{
+    border: 1px solid grey;
+    text-align: center;
+}
+
+#cart-container table td:nth-child(1){
+    width: 100px;
+}
+
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3){
+    width: 200px;
+}
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6){
+    width: 170px;
+}
+
+#cart-container table td tbody img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
 
 
 
