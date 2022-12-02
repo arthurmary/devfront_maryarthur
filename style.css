@@ -52,6 +52,8 @@ img{
 .container{
     max-width: 114 rem;
     margin: 0 auto;
+    
+    display: flex;
 }
 
 @media only screen and (max-width: 1200){
@@ -380,3 +382,35 @@ img{
 .title_contact{
     font-size: 1.4rem;
 }
+
+/* Footer */
+
+.bg_footer{
+    background-color: #FF4500;
+    text-align: center;
+}
+
+/* PRODUIT */
+
+.sproduct{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.small-img-group{
+   display: flex; 
+   justify-content: space space-between;
+}
+
+.small-img-col{
+    width: 200px;
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+
+
+
+
+
