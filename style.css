@@ -456,6 +456,23 @@ img{
 }
 
 
+.slide{
+    text-align: center;
+    display: inline;
+}
+
+.total{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* PAIEMENT */
+
+.remerciement{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 
 
